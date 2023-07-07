@@ -14,8 +14,8 @@ collection = db['quotes']
 for page in range(10):
   for i in range(1, 11):
       quote_xpath = f"/html/body/div[1]/div[2]/div[1]/div[{i}]/span[1]"
-      author_xpath =
-f"/html/body/div[1]/div[2]/div[1]/div[{i}]/span[2]/small"
+      author_xpath = f"/html/body/div[1]/div[2]/div[1]/div[{i}]/span[2]/small"
+
       quote_element = driver.find_element(By.XPATH, quote_xpath)
       quote_text = quote_element.text
       author_element = driver.find_element(By.XPATH, author_xpath)
